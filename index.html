@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deku Official | ديكو</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Cairo:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="code-canvas"></canvas>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" class="logo-img" alt="Deku Logo">
+            <h1 style="font-family: 'Orbitron'; font-size: 1.2rem;">DEKU</h1>
+        </div>
+        <nav>
+            <a href="#home" data-i18n="nav-home">Home</a>
+            <a href="#about" data-i18n="nav-about">About</a>
+            <a href="#services" data-i18n="nav-services">Services</a>
+            <a href="#skills" data-i18n="nav-skills">Team</a>
+            <a href="#contact" data-i18n="nav-contact">Contact</a>
+        </nav>
+        <div class="controls">
+            <button class="btn-toggle" id="lang-btn">العربية</button>
+            <button class="btn-toggle" id="theme-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <section id="home" class="hero reveal">
+        <div class="hero-content">
+            <img src="images/logo.png" class="hero-img" alt="Deku">
+            <h2 id="typewriter"></h2>
+            <div class="social-links">
+                <a href="https://youtube.com/@xrstudio-7"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.gg/TeY2APPZ3j"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title" data-i18n="about-title">About Deku</h2>
+        <div class="about-flex">
+            <div class="about-text">
+                <p data-i18n="about-p1">Deku is an awesome channel for all entertainment lovers! Fun videos, challenges, and vlogs for everyone!</p>
+                <br>
+                <p data-i18n="about-p2">If you love entertainment and creative content, Deku has got it all in one place!</p>
+            </div>
+            <div class="about-image">
+                <img src="images/logo.png" alt="About Deku">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title" data-i18n="nav-services">Services</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-video" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3 data-i18n="s1-t">Video Content</h3>
+                <p data-i18n="s1-d">Creative and entertaining videos for your channel.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-music" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3 data-i18n="s2-t">Background Music</h3>
+                <p data-i18n="s2-d">High-quality music for editing and clips.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-film" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3 data-i18n="s3-t">Video Editing</h3>
+                <p data-i18n="s3-d">Professional editing for your content.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-laugh" style="font-size: 3rem; color: var(--primary);"></i>
+                <h3 data-i18n="s4-t">Entertainment</h3>
+                <p data-i18n="s4-d">Fun challenges, pranks, and engaging content.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title" data-i18n="nav-skills">Our Team</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/yehya.png" alt="Yehya">
+               <a href="channel1"><h3>@MohamOverKill</h3></a> 
+            </div>
+            <div class="card">
+                <img src="images/Ra3d.png" alt="Ra3d">
+                <a href="channel2"><h3>@youtuber2</h3></a>
+            </div>
+            <div class="card">
+                <img src="images/hamed.png" alt="Hamed">
+                <a href="channel3"><h3>@Butterfly</h3></a>
+            </div>
+            <div class="card">
+                <img src="images/hamed.png" alt="Hamed">
+                <a href="channel4"><h3>@Butterfly</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title" data-i18n="nav-contact">Contact Us</h2>
+        <div class="contact-form">
+            <form id="my-form">
+                <input type="text" data-i18n-ph="ph-name" placeholder="Your Name" required>
+                <input type="email" data-i18n-ph="ph-email" placeholder="Your Email" required>
+                <textarea data-i18n-ph="ph-msg" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" data-i18n="btn-send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
